@@ -2,3 +2,4 @@ Revision history for Dist-Zilla-Plugin-YAPkgVersion
 
 {{$NEXT}}
   - Initial Creation
+  - Ripped off OurPkgVersion code and modified output to do what I wanted.

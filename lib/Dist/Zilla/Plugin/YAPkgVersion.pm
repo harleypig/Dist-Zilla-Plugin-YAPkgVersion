@@ -69,7 +69,7 @@ sub munge_file {
         my ( $ws, $comment ) =  ( $1, $2 );
 
         # MY CHANGE HERE
-        my $code = qq{=head1 VERSION\n  $version\n\n=cut\n\nour $VERSION = $version ; $comment";
+        my $code = qq{=head1 VERSION\n  $version\n\n=cut\n\n${ws}our \$VERSION = $version ; $comment};
 
         $_->set_content("$code");
         $file->content( $doc->serialize );
